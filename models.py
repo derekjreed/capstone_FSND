@@ -11,7 +11,8 @@ DB_PASSWORD = os.getenv('DB_PASSWORD', 'password123')
 DB_NAME = os.getenv('DB_NAME', 'agency')
 #DB_PATH = 'postgresql+psycopg2://{}:{}@{}/{}'.format(
 #    DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
-DB_PATH = os.getenv('DATABASE_URL')
+#DB_PATH = os.getenv('DATABASE_URL')
+DB_PATH = 'postgresql://xijhqwhsyjpwwf:feb0fbccb3855558a619abf4de730db95e6be2150eac170ff9941acb35a135af@ec2-54-198-213-75.compute-1.amazonaws.com:5432/d7rq5igu6rgi9f'
 
 
 db = SQLAlchemy()
